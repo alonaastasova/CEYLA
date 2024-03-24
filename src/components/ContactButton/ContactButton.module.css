@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.contactBtn{ 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer; 
+    text-align: center;
+    text-decoration: none;
+    /*Button stilization*/
+    letter-spacing: -0.5px;
+    border: 2px solid #adb5bd;
+    border-radius: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    background-color: black;
+    width: 130px;
+    padding: 5px; 
+    transition: .3s ease-in-out;
+} 
+
+.contactBtn:hover {
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    letter-spacing: 1px;
+    padding: 6px;
+    width: 140px;
+}
+

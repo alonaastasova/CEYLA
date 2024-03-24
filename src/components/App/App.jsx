@@ -1,4 +1,5 @@
 import MainPage from '../../pages/MainPage/MainPage';
+import ContactButton from '../ContactButton/ContactButton';
 import Header from '../Header/Header';
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <div>
       <Header />
       <MainPage />
+      <ContactButton />
     </div>
   );
 }
