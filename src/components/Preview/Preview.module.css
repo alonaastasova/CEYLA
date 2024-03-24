@@ -1,0 +1,17 @@
+.preview {
+    /* position: relative; */
+    width: 100%;
+    height: 650px;
+    /* height: 300px; */
+}
+
+.preview video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .preview .text {
+    font-size: 30px;
+    font-weight: 600;
+} */
