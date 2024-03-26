@@ -1,0 +1,107 @@
+.container {
+    display: grid;
+    padding: 0 100px 100px 100px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 130px);
+    gap: 30px;
+}
+
+.item1 {
+    grid-area: 1/1/4/2;
+    overflow: hidden;
+}
+.item1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item2 {
+    grid-area: 1/2/4/3;
+    overflow: hidden;
+}
+.item2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item3 {
+    grid-area: 1/3/4/4;
+    overflow: hidden;
+}
+.item3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item4 {
+    grid-area: 1/4/4/5;
+    overflow: hidden;
+}
+.item4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item5 {
+    grid-area: 4/1/6/2;
+    overflow: hidden;
+}
+.item5 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item6 {
+    grid-area: 4/2/6/3;
+    overflow: hidden;
+}
+.item6 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item7 {
+    grid-area: 4/3/5/4;
+    overflow: hidden;
+}
+.item7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item8 {
+    grid-area: 5/3/6/4;
+    overflow: hidden;
+}
+.item8 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item9 {
+    grid-area: 4/4/5/5;
+    overflow: hidden;
+}
+.item9 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.item10 {
+    grid-area: 5/4/6/5;
+    overflow: hidden;
+}
+.item10 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
