@@ -8,7 +8,7 @@
     grid-template-rows: repeat(1, 250px);
     justify-content: center;
     grid-column-gap: 65px;
-    padding: 50px;
+    padding-top: 50px;
 }
 
 .linkBlock{
