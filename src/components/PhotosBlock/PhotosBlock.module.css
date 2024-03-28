@@ -1,6 +1,6 @@
 .container {
     display: grid;
-    padding: 0 100px 100px 100px;
+    padding: 0 50px 50px 50px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 130px);
     gap: 30px;
@@ -9,18 +9,56 @@
 .item1 {
     grid-area: 1/1/4/2;
     overflow: hidden;
+    position: relative;
 }
-.item1 img{
+
+.item1 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.item1::before,
+.item2::before,
+.item3::before,
+.item4::before,
+.item5::before,
+.item6::before,
+.item7::before,
+.item8::before,
+.item9::before,
+.item10::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    opacity: 1;
+    transition: opacity 0.8s ease; 
+}
+
+.item1:hover::before,
+.item2:hover::before,
+.item3:hover::before,
+.item4:hover::before,
+.item5:hover::before,
+.item6:hover::before,
+.item7:hover::before,
+.item8:hover::before,
+.item9:hover::before,
+.item10:hover::before {
+    opacity: 0; 
+}
+
 .item2 {
     grid-area: 1/2/4/3;
     overflow: hidden;
+    position: relative;
 }
-.item2 img{
+
+.item2 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -29,8 +67,10 @@
 .item3 {
     grid-area: 1/3/4/4;
     overflow: hidden;
+    position: relative;
 }
-.item3 img{
+
+.item3 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -39,8 +79,10 @@
 .item4 {
     grid-area: 1/4/4/5;
     overflow: hidden;
+    position: relative;
 }
-.item4 img{
+
+.item4 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -49,8 +91,10 @@
 .item5 {
     grid-area: 4/1/6/2;
     overflow: hidden;
+    position: relative;
 }
-.item5 img{
+
+.item5 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -59,8 +103,10 @@
 .item6 {
     grid-area: 4/2/6/3;
     overflow: hidden;
+    position: relative;
 }
-.item6 img{
+
+.item6 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -69,8 +115,10 @@
 .item7 {
     grid-area: 4/3/5/4;
     overflow: hidden;
+    position: relative;
 }
-.item7 img{
+
+.item7 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -79,8 +127,10 @@
 .item8 {
     grid-area: 5/3/6/4;
     overflow: hidden;
+    position: relative;
 }
-.item8 img{
+
+.item8 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -89,8 +139,10 @@
 .item9 {
     grid-area: 4/4/5/5;
     overflow: hidden;
+    position: relative;
 }
-.item9 img{
+
+.item9 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -99,8 +151,10 @@
 .item10 {
     grid-area: 5/4/6/5;
     overflow: hidden;
+    position: relative;
 }
-.item10 img{
+
+.item10 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
