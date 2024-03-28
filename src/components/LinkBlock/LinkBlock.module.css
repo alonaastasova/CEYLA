@@ -7,7 +7,8 @@
     grid-template-columns: repeat(3, 450px);
     grid-template-rows: repeat(1, 250px);
     justify-content: center;
-    grid-column-gap: 40px;
+    grid-column-gap: 65px;
+    padding: 50px;
 }
 
 .linkBlock{
@@ -21,9 +22,23 @@
     background-repeat: no-repeat;
     background-size: 750px auto;
     background-position-x: -300px;
+    /* transition: background-color 0.5s; */
+}
+.linkBlock::before {
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 250px; 
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.5s; 
+    z-index: 1;
+}
+
+.linkBlock:hover::before {
+    background-color: rgba(0, 0, 0, 0.7); /* Цвет фона при наведении */
 }
   
-  .linkBlock:nth-child(2) {
+.linkBlock:nth-child(2) {
     background-image: url('../../media/link-block-img-2.jpg');
     background-repeat: no-repeat;
     background-size: 680px auto;
@@ -31,7 +46,7 @@
     background-position-y: -80px;
 }
   
-  .linkBlock:nth-child(3) {
+.linkBlock:nth-child(3) {
     background-image: url('../../media/link-block-img-3.jpg');
     background-repeat: no-repeat;
     background-size: 450px auto;
@@ -49,4 +64,10 @@
     background-color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
     color: black;
+    transition: .2s ease-in-out;
+    z-index: 2;
+}
+
+.button:hover{
+    background-color: white;
 }

@@ -1,6 +1,6 @@
 import React from "react"
 import s from './Preview.module.css'
-import video from '../../media/ceylaprewiev.mp4'
+import video from '../../media/ceyla_preview.mp4'
 
 
 
