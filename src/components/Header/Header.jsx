@@ -4,6 +4,7 @@ import weblogo from '../../media/logo-menu.png'
 import { FaInstagram } from "react-icons/fa";
 
 
+
 export default function Header() {
 
     return (
@@ -15,11 +16,11 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li><a href="/">HOME</a></li>
-                        <li><a href="/">PHOTOGRAPHY</a></li>
-                        <li><a href="/">VIDEO PRODUCTION</a></li>
-                        <li><a href="/">PORTFOLIO</a></li>
-                        <li><a href="/">OUR SERVICES</a></li>
-                        <li><a href="/">CONTACT</a></li>
+                        <li><a href="/photography">PHOTOGRAPHY</a></li>
+                        <li><a href="/videoproduction">VIDEO PRODUCTION</a></li>
+                        <li><a href="/portfolio">PORTFOLIO</a></li>
+                        <li><a href="/ourservices">OUR SERVICES</a></li>
+                        <li><a href="/contact">CONTACT</a></li>
                     </ul>
 
                     <div className={s.header_social}>
