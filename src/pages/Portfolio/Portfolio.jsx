@@ -15,6 +15,7 @@ import vid04 from '../../media/portfvid04.mp4'
 
 
 
+
 export default function Portfolio() {
     return (
         <div className={s.portfolioMainBlock}>
@@ -29,7 +30,7 @@ export default function Portfolio() {
                         yourself in a world where beauty knows no bounds.</p>
                 </div>
                 <div className={s.imageBlock}>
-                    
+                   
                 </div>
             </div>
 
@@ -44,10 +45,10 @@ export default function Portfolio() {
                 <div class={s.media}><img src={ph08} alt="image08" /></div>
             </div>
             <div className={s.videogalery}>
-                <div class=''><iframe width="560" height="315" src={vid01} frameborder="0" allowfullscreen></iframe></div>
-                <div class=''><iframe width="560" height="315" src={vid02} frameborder="0" allowfullscreen></iframe></div>
-                <div class=''><iframe width="560" height="315" src={vid03} frameborder="0" allowfullscreen></iframe></div>
-                <div class=''><iframe width="560" height="315" src={vid04} frameborder="0" allowfullscreen></iframe></div>
+                <div class=''><iframe width="560" height="315" title='Unique title' src={vid01} frameborder="0" allowfullscreen></iframe></div>
+                <div class=''><iframe width="560" height="315" title='Unique title' src={vid02} frameborder="0" allowfullscreen></iframe></div>
+                <div class=''><iframe width="560" height="315" title='Unique title' src={vid03} frameborder="0" allowfullscreen></iframe></div>
+                <div class=''><iframe width="560" height="315" title='Unique title' src={vid04} frameborder="0" allowfullscreen></iframe></div>
             </div>
 
         </div>

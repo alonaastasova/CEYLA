@@ -5,6 +5,10 @@ import Header from '../Header/Header';
 import Footer from '../../components/Footer/Footer'
 import Photography from '../../pages/Photography/Photography';
 import Portfolio from '../../pages/Portfolio/Portfolio';
+import Contact from '../../pages/Contact/Contact';
+import OurServices from '../../pages/OurServices/OurServices';
+import VideoProd from '../../pages/VideoProd/VideoProd';
+
 
 function App() {
   return (
@@ -13,10 +17,10 @@ function App() {
       <Routes>
         <Route path='/' element={<MainPage />}/>
         <Route path='/photography' element={<Photography />}/>
-        <Route path='/videoproduction' element={''}/>
+        <Route path='/videoproduction' element={<VideoProd />}/>
         <Route path='/portfolio' element={<Portfolio />}/>
-        <Route path='/ourservices' element={''}/>
-        <Route path='/contact' element={''}/>
+        <Route path='/ourservices' element={<OurServices />}/>
+        <Route path='/contact' element={<Contact />}/>
       </Routes>
       {/* <MainPage /> */}
       <ContactButton />
