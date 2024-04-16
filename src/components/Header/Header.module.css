@@ -39,24 +39,45 @@ nav {
     margin-right: 70px;
 }
 
-nav ul {
+.navLinks{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    padding-bottom: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    gap: 50px;
+}
+
+.navLinks a{
+    text-decoration: none;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.navLinks a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-}
+} */
 
-nav ul li {
+/* nav ul li {
     margin-right: 50px;
     font-family: "Montserrat", sans-serif;
     font-size: 17px;
-}
+} */
 
-nav ul li:last-child {
+/* nav ul li:last-child {
     margin-right: 0;
-}
+} */
 
-nav ul li a {
+/* nav ul li a {
     text-decoration: none;
     color: white;
     transition: 0.3s ease;
@@ -65,7 +86,7 @@ nav ul li a {
 nav ul li a:hover {
     font-weight: bold;
     text-decoration: underline;
-}
+} */
 
 .header_social {
     color: white;
