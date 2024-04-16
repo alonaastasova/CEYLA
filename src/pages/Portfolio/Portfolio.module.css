@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+.portfolioMainBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 50px 100px;
+}
+
+.portfolioInfo {
+    display: flex;
+}
+
+.textBlock {
+    width: 50%;
+    padding-right: 15px;
+    color: aliceblue;
+}
+
+.textBlock h1 {
+    padding-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.textBlock h3 {
+    padding-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 21px;
+}
+
+.textBlock p {
+    padding-bottom: 50px;
+    font-family: "Raleway", sans-serif;
+    text-align: justify;
+}
+
+.imageBlock {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 15px;
+    width: 50%;
+}
+
+.portfolioGallery {
+    color: aliceblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.media {
+    max-width: 300px;
+    overflow: hidden;
+} 
+
+.media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+}
+
+.videogalery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
