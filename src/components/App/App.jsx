@@ -4,7 +4,7 @@ import ContactButton from '../ContactButton/ContactButton';
 import Header from '../Header/Header';
 import Footer from '../../components/Footer/Footer'
 import Photography from '../../pages/Photography/Photography';
-import Portfolio from '../../pages/Portfolio/Portfolio';
+import Portfolio from '../../pages/Portfolio/Portfolio.jsx';
 import Contact from '../../pages/Contact/Contact';
 import OurServices from '../../pages/OurServices/OurServices';
 import VideoProd from '../../pages/VideoProd/VideoProd';

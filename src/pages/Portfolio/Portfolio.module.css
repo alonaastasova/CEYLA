@@ -75,3 +75,14 @@
     justify-content: space-between;
     gap: 20px;
 }
+
+.gallery {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .ReactGridGallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}

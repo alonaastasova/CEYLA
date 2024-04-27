@@ -1,22 +1,23 @@
 import React from 'react'
 import s from './Portfolio.module.css'
-import ph01 from '../../media/portf01.jpg'
-import ph02 from '../../media/portf02.jpg'
-import ph03 from '../../media/portf03.jpg'
-import ph04 from '../../media/portf04.jpg'
-import ph05 from '../../media/portf05.jpg'
-import ph06 from '../../media/portf06.jpg'
-import ph07 from '../../media/portf07.jpg'
-import ph08 from '../../media/portf08.jpg'
-import vid01 from '../../media/portfvid01.mp4'
-import vid02 from '../../media/portfvid02.mp4'
-import vid03 from '../../media/portfvid03.mp4'
-import vid04 from '../../media/portfvid04.mp4'
-
-
+// import { Gallery } from 'react-grid-gallery';
+// import { portfolioImg } from '../../data/portfolioImg.js'
+// import ph01 from '../../media/portf01.jpg'
+// import ph02 from '../../media/portf02.jpg'
+// import ph03 from '../../media/portf03.jpg'
+// import ph04 from '../../media/portf04.jpg'
+// import ph05 from '../../media/portf05.jpg'
+// import ph06 from '../../media/portf06.jpg'
+// import ph07 from '../../media/portf07.jpg'
+// import ph08 from '../../media/portf08.jpg'
+// import vid01 from '../../media/portfvid01.mp4'
+// import vid02 from '../../media/portfvid02.mp4'
+// import vid03 from '../../media/portfvid03.mp4'
+// import vid04 from '../../media/portfvid04.mp4'
 
 
 export default function Portfolio() {
+
     return (
         <div className={s.portfolioMainBlock}>
 
@@ -30,11 +31,16 @@ export default function Portfolio() {
                         yourself in a world where beauty knows no bounds.</p>
                 </div>
                 <div className={s.imageBlock}>
-                   
+
                 </div>
             </div>
 
-            <div className={s.portfolioGallery}>
+            {/* <div className={s.gallery}>
+                <Gallery images={portfolioImg} />
+            </div> */}
+
+
+            {/* <div className={s.portfolioGallery}>
                 <div class={s.media}><img src={ph01} alt="image01" /></div>
                 <div class={s.media}><img src={ph02} alt="image02" /></div>
                 <div class={s.media}><img src={ph03} alt="image03" /></div>
@@ -49,7 +55,7 @@ export default function Portfolio() {
                 <div class=''><iframe width="560" height="315" title='Unique title' src={vid02} frameborder="0" allowfullscreen></iframe></div>
                 <div class=''><iframe width="560" height="315" title='Unique title' src={vid03} frameborder="0" allowfullscreen></iframe></div>
                 <div class=''><iframe width="560" height="315" title='Unique title' src={vid04} frameborder="0" allowfullscreen></iframe></div>
-            </div>
+            </div> */}
 
         </div>
     )
