@@ -1,33 +1,25 @@
 .container {
     display: grid;
-    padding: 0 50px 50px 50px;
+    padding: 15px 50px 50px 50px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 130px);
+    grid-template-rows: repeat(8, 110px);
     gap: 30px;
 }
 
-.item1 {
-    grid-area: 1/1/4/2;
-    overflow: hidden;
-    position: relative;
+.lazyloadElem{
+    display: grid;
+    offset: 100;
+    height: 100%;
 }
 
-.item1 img {
+.item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* object-position: center;  */
 }
 
-.item1::before,
-.item2::before,
-.item3::before,
-.item4::before,
-.item5::before,
-.item6::before,
-.item7::before,
-.item8::before,
-.item9::before,
-.item10::before {
+.item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -39,123 +31,82 @@
     transition: opacity 0.8s ease; 
 }
 
-.item1:hover::before,
-.item2:hover::before,
-.item3:hover::before,
-.item4:hover::before,
-.item5:hover::before,
-.item6:hover::before,
-.item7:hover::before,
-.item8:hover::before,
-.item9:hover::before,
-.item10:hover::before {
+.item:hover::before{
     opacity: 0; 
 }
 
-.item2 {
-    grid-area: 1/2/4/3;
+.container .lazyloadElem:nth-child(1) {
+    grid-area: 1/1/5/2;
     overflow: hidden;
     position: relative;
 }
 
-.item2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item3 {
-    grid-area: 1/3/4/4;
+.container .lazyloadElem:nth-child(2) {
+    grid-area: 1/2/5/3;
     overflow: hidden;
     position: relative;
 }
 
-.item3 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item4 {
-    grid-area: 1/4/4/5;
+.container .lazyloadElem:nth-child(3) {
+    grid-area: 1/3/5/4;
     overflow: hidden;
     position: relative;
 }
 
-.item4 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item5 {
-    grid-area: 4/1/6/2;
+.container .lazyloadElem:nth-child(4) {
+    grid-area: 1/4/5/5;
     overflow: hidden;
     position: relative;
 }
 
-.item5 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container .lazyloadElem:nth-child(5) {
+    grid-area: 5/1/9/2;
+    overflow: hidden;
+    position: relative;
+    object-fit: contain; 
 }
 
-.item6 {
-    grid-area: 4/2/6/3;
+.container .lazyloadElem:nth-child(5) img {
+    object-position: -300px;
+    /*or we can use 
+    object-position: right;*/
+} 
+
+.container .lazyloadElem:nth-child(6) {
+    grid-area: 5/2/9/3;
     overflow: hidden;
     position: relative;
 }
 
-.item6 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.container .lazyloadElem:nth-child(7) {
+    grid-area: 5/3/7/4;
+    overflow: hidden;
+    position: relative;
+    place-items: center;
 }
 
-.item7 {
-    grid-area: 4/3/5/4;
+.container .lazyloadElem:nth-child(8) {
+    grid-area: 7/3/9/4;
     overflow: hidden;
     position: relative;
 }
 
-.item7 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item8 {
-    grid-area: 5/3/6/4;
+.container .lazyloadElem:nth-child(9) {
+    grid-area: 5/4/7/5;
     overflow: hidden;
     position: relative;
 }
 
-.item8 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item9 {
-    grid-area: 4/4/5/5;
+.container .lazyloadElem:nth-child(10) {
+    grid-area: 7/4/9/5;
     overflow: hidden;
     position: relative;
 }
 
-.item9 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.item10 {
-    grid-area: 5/4/6/5;
+.container .lazyloadElem:nth-child(n + 7) {
     overflow: hidden;
     position: relative;
-}
-
-.item10 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './FirstTextBlock.module.css'
-import logoq from '../../media/logo-quote.png'
+import logoq from '../../media/logo-quote1.png'
 
 export default function FirstTextBlock() {
   return (
