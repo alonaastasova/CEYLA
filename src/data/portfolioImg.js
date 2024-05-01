@@ -13,43 +13,51 @@ import ph08 from '../media/portf08.jpg'
 
 export const portfolioImg = [
     {
-        src: ph01,
+        largeURL: ph01,
+        thumbnailURL: ph01,
         width: 500,
-        height: 700,
+        height: 700
     },
     {
-        src: ph02,
+        largeURL: ph02,
+        thumbnailURL: ph02,
         width: 240,
         height: 420
     },
     {
-        src: ph03,
+        largeURL: ph03,
+        thumbnailURL: ph03,
         width: 240,
         height: 420
     },
     {
-        src: ph04,
+        largeURL: ph04,
+        thumbnailURL: ph04,
         width: 240,
         height: 420
     },
     {
-        src: ph05,
+        largeURL: ph05,
+        thumbnailURL: ph05,
         width: 240,
         height: 420
     },
     {
-        src: ph06,
+        largeURL: ph06,
+        thumbnailURL: ph06,
         width: 240,
         height: 420
     },
     {
-        src: ph07,
+        largeURL: ph07,
+        thumbnailURL: ph07,
         width: 240,
         height: 420
     },
     {
-        src: ph08,
-        width: 240,
-        height: 420
+        largeURL: ph08,
+        thumbnailURL: ph08,
+        width: 400,
+        height: 400
     }
 ];

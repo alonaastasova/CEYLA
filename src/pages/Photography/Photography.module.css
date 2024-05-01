@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+.headBlock {
+    background-image: url('../../media/photography/photography_background_top.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 1200px;
+  }
+
+.informBlock {
+    display: flex;
+    padding: 80px 0px 0px 150px;
+    color: white;
+}
+
+.informBlock_left {
+    width: 40%;
+}
+
+.informBlock_right {
+    width: 60%;
+}

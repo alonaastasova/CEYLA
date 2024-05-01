@@ -1,0 +1,41 @@
+.textBlock {
+    background-color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textBlock h1 {
+    font-size: 20px;
+}
+
+.contactBlock {
+    display: flex;
+    width: 1fr;
+    height: 1000px;
+}
+
+.contactLeft {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactLeft img {
+    height: 100%;
+    width: auto;
+}
+
+.contactRight {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactRight img {
+    height: 100%;
+    width: auto;
+}
