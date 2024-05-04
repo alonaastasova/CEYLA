@@ -1,29 +1,363 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
     font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .headBlock {
-    background-image: url('../../media/photography/photography_background_top.jpg'); 
+    background-image: url('../../media/photography/photography_background_top.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
     width: 100%;
-    height: 1200px;
-  }
+    height: 900px;
+}
 
 .informBlock {
     display: flex;
-    padding: 80px 0px 0px 150px;
+    padding: 50px 0px 0px 120px;
     color: white;
+    gap: 40px;
 }
 
 .informBlock_left {
     width: 40%;
 }
 
+.informBlock_left h1 {
+    font-size: 111px;
+    line-height: 100px;
+}
+
+.informBlock_left h6 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.informBlock_left_btns {
+    margin-top: 40px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    grid-gap: 15px;
+}
+
+.informBlock_left_btns button {
+    border-radius: 15px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.informBlock_left_btns button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
 .informBlock_right {
     width: 60%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 100%);
+    padding: 40px 0px 40px;
+}
+
+.informBlock_right h6 {
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+}
+
+.informBlock_right li {
+    font-size: 14px;
+    padding: 15px 30px;
+    line-height: 5px;
+}
+
+.informBlock_right p {
+    padding: 10px 30px;
+}
+
+.aboutBlock {
+    margin-top: 80px;
+    display: flex;
+    color: white;
+}
+
+.aboutInfo {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 100%);
+    padding: 40px 0px 40px;
+}
+
+.aboutProfPic img {
+    height: 300px;
+    width: auto;
+}
+
+.aboutH5 {
+    font-size: 30px;
+    transform: rotate(-90deg);
+    margin: 120px -20px 0px 80px
+}
+
+.aboutText h6 {
+    font-size: 20px;
+    padding: 5px 20px 5px 30px;
+}
+
+.aboutText p {
+    padding: 15px 0px 0px 30px;
+}
+
+.aboutBlockMarker {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.aboutBlockMarker h1 {
+    font-size: 40px;
+    align-self: center;
+}
+
+.aboutBlockMarker img {
+    width: 70px;
+    height: 70px;
+}
+
+.packagesBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px 70px 0px 70px;
+    color: white;
+}
+
+.packagesBlock li {
+    font-size: 15px;
+}
+
+.packOne,
+.packTwo,
+.packThree {
+    display: flex;
+    flex-direction: column;
+}
+
+.packOne img,
+.packTwo img,
+.packThree img {
+    width: 300px;
+    height: auto;
+}
+
+.packOne button,
+.packTwo button,
+.packThree button {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.packOne button:hover,
+.packTwo button:hover,
+.packThree button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.packOneInfo,
+.packTwoInfo,
+.packThreeInfo {
+    border: 1px solid white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 15px;
+    padding: 20px;
+}
+
+.packOneInfo h1,
+.packTwoInfo h1,
+.packThreeInfo h1 {
+    margin-bottom: 20px;
+}
+
+.packOneInfo h2,
+.packTwoInfo h2,
+.packThreeInfo h2 {
+    margin-top: 20px;
+}
+
+.packOneInfo img,
+.packTwoInfo img,
+.packThreeInfo img {
+    height: 200px;
+    width: 370px;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.whatAboutBlock {
+    background-color: #CBC7B7;
+    margin-top: 50px;
+    padding: 20px 300px;
+    font-weight: 700;
+    display: flex;
+    text-align: center;
+}
+
+.weddingBlock {
+    background-image: url('../../media/photography/photography_background_bottom.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    height: 650px;
+}
+
+.weddingContainer {
+    display: flex;
+    padding: 50px 0px 0px 120px;
+    color: white;
+    gap: 40px;
+}
+
+.weddingContainerInfo {
+    width: 55%;
+    text-align: justify;
+}
+
+.weddingContainerInfo h1 {
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.weddingContainerInfo p {
+    margin-bottom: 20px;
+}
+
+.weddingContainerInfo h2 {
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.weddingContainerPackage {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.weddingPack {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+}
+
+.weddingPackInfo {
+    border: 1px solid white;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 10px;
+}
+
+.weddingPack img {
+    width: 200px;
+    height: auto;
+}
+
+.weddingPackInfo img {
+    height: 200px;
+    width: 420px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+.weddingPack button {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.weddingPack button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.weddingPack .weddingPackInfo li,
+.weddingPack .weddingPackInfo h2 {
+  text-align: center; 
+}
+
+.importantBlock {
+    width: 100%;
+    height: 350px;
+    background-color: #CBC7B7;
+}
+
+.arrowRight {
+    width: 100px;
+    height: 100px;
+}
+
+.grig {
+    display: grid;
+    grid-template-columns: 400px 300px 300px 300px;
+    grid-gap: 30px;
+    padding: 40px 30px;
+    text-align: justify; 
+}
+  
+
+.impB1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+} 
+
+.impB1 img {
+    height: 70px;
+    width: auto;
+}
+
+.impB2,
+.impB3,
+.impB4 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start; 
+    height: 100%;
+    text-align: justify; 
+}
+
+.impB2 h6,
+.impB3 h6,
+.impB4 h6 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
