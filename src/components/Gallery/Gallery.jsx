@@ -4,6 +4,7 @@ import 'photoswipe/style.css';
 import s from './Gallery.module.css';
 
 export default function Gallery(props) {
+  
   useEffect(() => {
     let lightbox = new PhotoSwipeLightbox({
       gallery: '#' + props.galleryID,
@@ -16,21 +17,23 @@ export default function Gallery(props) {
       lightbox.destroy();
       lightbox = null;
     };
-  }, []);
+  }, [props.galleryID]);
 
   return (
     <div className={s.galleryDiv} id={props.galleryID}>
       {props.images.map((image, index) => (
-        <a
-          href={image.largeURL}
-          data-pswp-width={image.width}
-          data-pswp-height={image.height}
-          key={props.galleryID + '-' + index}
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={image.thumbnailURL} alt="" />
-        </a>
+        <div className={s.photoCard} key={props.galleryID + '-' + index}>
+          <a
+            href={image.src}
+            data-pswp-width={image.width}
+            data-pswp-height={image.height}
+            // key={props.galleryID + '-' + index}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={image.src} alt=""/>
+          </a>
+        </div>
       ))}
     </div>
   );

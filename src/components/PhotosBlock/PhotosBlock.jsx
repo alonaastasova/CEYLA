@@ -25,34 +25,34 @@ export default function PhotosBlock() {
 
   return (
     <div className={s.container}>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
         <div className={s.item}><img src={ph1} alt="ph1"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph2} alt="ph2"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph3} alt="ph3"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph4} alt="ph4"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph5} alt="ph5"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph6} alt="ph6"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph7} alt="ph7"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph8} alt="ph8"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph9} alt="ph9"/></div>
       </LazyLoad>
-      <LazyLoad className={s.lazyloadElem}>
+      <LazyLoad offset={100} className={s.lazyloadElem}>
       <div className={s.item}><img src={ph10} alt="ph10"/></div>
       </LazyLoad>
     </div>

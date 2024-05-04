@@ -4,7 +4,6 @@ import 'photoswipe/style.css';
 import Gallery from '../../components/Gallery/Gallery'
 import { portfolioImg } from '../../data/portfolioImg';
 
-
 export default function Portfolio() {
 
     return (
