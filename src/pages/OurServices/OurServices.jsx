@@ -1,6 +1,6 @@
 import React from 'react'
 import s from './OurServices.module.css'
-import headImg from '../../media/ourServices/headIMG.PNG'
+import headImg from '../../media/ourServices/headImg.PNG'
 import redBorder from '../../media/ourServices/redBorder.png'
 import whiteBorder from '../../media/ourServices/whiteBorder.png'
 import { Link } from 'react-router-dom'

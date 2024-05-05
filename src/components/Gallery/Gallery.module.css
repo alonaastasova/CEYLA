@@ -5,7 +5,6 @@
     grid-auto-rows: auto; 
     gap: 30px;
     width: 100%;
-    justify-content: center;
 }
 
 .photoCard{

@@ -20,6 +20,7 @@
     width: 130px;
     padding: 5px; 
     transition: .3s ease-in-out;
+    z-index: 2;
 } 
 
 .contactBtn:hover {

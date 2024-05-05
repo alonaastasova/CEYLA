@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.headBlock {
+    background-image: url('../../media/videoProd/videoProdBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    width: 100%;
+    height: 1000px;
+}
+
+.informBlock {
+    display: flex;
+    padding: 55px 0px 0px 130px;
+    color: white;
+    /* gap: 75px; */
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 70%);
+    z-index: 1;
+    position: relative;
+}
+
+.informBlock_left {
+    width: 55%;
+    margin-top: -260px;
+}
+
+.informBlock_left img{
+    width: 50px;
+    padding-top: 75px;
+}
+
+.informBlock_left::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin-top: 70px;
+}
+
+.informBlock_left hr{
+    width: 545px;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    margin: 30px 0 30px 0;
+}
+
+.informBlock_left h1 {
+    font-size: 75px;
+    line-height: 70px;
+}
+
+.informBlock_left h6 {
+    width: 500px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.informBlock_right {
+    width: 60%;
+    padding: 30px 0px 40px;
+}
+
+.informBlock_right h6 {
+    font-size: 20px;
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+}
+
+.informBlock_right p {
+    padding: 20px 30px 0px 15px;
+    font-style: italic;
+}
+
+.informBlock_right hr{
+    width: 250px;
+    margin: 35px 0px -35px 220px;
+}
+
+.informBlock_right strong{
+    font-style: normal;
+}
+
+.checkList{
+    display: flex;
+}
+
+.checkList img{
+    width: 25px;
+}
+
+.aboutBlock {
+    /* margin-top: 80px; */
+    display: flex;
+    color: white;
+}
+
+.aboutInfo {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8) 10%, rgba(0, 0, 0, 0) 70%);
+    padding: 40px 0px 40px;
+    margin-top: -175px;
+}
+
+.aboutProfPic img {
+    height: 380px;
+    filter: brightness(90%);
+    /* width: auto; */
+}
+
+.aboutH5 {
+    font-size: 45px;
+    transform: rotate(-90deg);
+    /* margin: 120px -20px 0px 0px */
+    align-self: center;
+    width: 80px;
+}
+
+.aboutText h6 {
+    font-size: 20px;
+    padding: 0px 20px 0px 30px;
+}
+
+.aboutText p {
+    padding: 15px 25px 0px 30px;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.aboutSecondBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0px auto;
+    padding-bottom: 25px;
+}
+
+.text1{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.text1 img{
+    width: 100px;
+}
+
+.text2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.text2 p{
+    text-align: center;
+}
+
+.text2 span{
+    font-style: italic;
+}
+
+.portfolioLine{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.portfolioBlock{
+    display: flex;
+}
+
+.portfolioBlock img{
+    width: 100px;
+}
+
+.portfolioBlock{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 15px 50px 15px;
+}
+
+.videoDiv {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+}
+
+.videoPlaying{
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.videoPlaying::after {
+    display: none;
+}
+
+.video{
+    width: 250px;
+    position: relative;
+    cursor: pointer;
+}
+
+.video::after {
+    content: '';
+    background-image: url('../../media/videoProd/playButton.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.priceLine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    font-size: 40px;
+    font-weight: 700;
+    background-color: white;
+}
+
+.priceLine span{
+    font-size: 30px;
+    font-style: italic;
+}
+
+.packagesBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 20px 70px 50px 70px;
+    color: white;
+}
+
+.packagesBlock li {
+    font-size: 15px;
+}
+
+.packOne,
+.packTwo,
+.packThree {
+    display: flex;
+    flex-direction: column;
+}
+
+.packOne img,
+.packTwo img,
+.packThree img {
+    width: 300px;
+    height: 90px;
+}
+
+.packOne button,
+.packTwo button,
+.packThree button {
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.packOne button:hover,
+.packTwo button:hover,
+.packThree button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.packOneInfo,
+.packTwoInfo,
+.packThreeInfo {
+    border: 1px solid white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 15px;
+    padding: 20px;
+}
+
+.packOneInfo h1,
+.packTwoInfo h1,
+.packThreeInfo h1 {
+    margin-bottom: 20px;
+}
+
+.packOneInfo h2,
+.packTwoInfo h2,
+.packThreeInfo h2 {
+    margin-top: 20px;
+}
+
+.packOneInfo img,
+.packTwoInfo img,
+.packThreeInfo img {
+    height: 200px;
+    width: 370px;
+    object-fit: cover;
+    padding-bottom: 20px;
+}
+
+.importantBlock {
+    width: 100%;
+    height: auto;
+    background-color: #CBC7B7;
+    padding: 40px 60px 40px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.impBTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+} 
+
+.impBTitle img {
+    height: 125px;
+    width: auto;
+}
+
+.impBList{
+    line-height: 30px;
+}
