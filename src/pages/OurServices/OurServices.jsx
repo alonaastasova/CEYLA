@@ -3,6 +3,7 @@ import s from './OurServices.module.css'
 import headImg from '../../media/ourServices/headIMG.PNG'
 import redBorder from '../../media/ourServices/redBorder.png'
 import whiteBorder from '../../media/ourServices/whiteBorder.png'
+import { Link } from 'react-router-dom'
 
 export default function OurServices() {
 
@@ -95,8 +96,8 @@ export default function OurServices() {
               <p>We offer a comprehensive range of services, from photography and videography to managing Instagram accounts and designing graphics for your logo, flyers, and brochures. We can create stunning content for you and your business. You can find our complete list of services below. Don't hesitate to reach out to us with any requests.</p>
             </div>
             <div className={s.navButtons}>
-              <button>PHOTOGRAPHY</button>
-              <button>VIDEO PRODUCTION</button>
+              <Link to={'/photography'}><button>PHOTOGRAPHY</button></Link>
+              <Link to={'/videoproduction'}><button>VIDEO PRODUCTION</button></Link>
             </div>
           </div>
 

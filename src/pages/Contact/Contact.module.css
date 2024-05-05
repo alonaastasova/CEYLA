@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .textBlock {
     background-color: white;
     height: 100px;
@@ -12,30 +21,218 @@
 
 .contactBlock {
     display: flex;
-    width: 1fr;
-    height: 1000px;
+    width: 100%;
+    margin-top: 20px;
+    padding: 0px 50px;
 }
 
 .contactLeft {
-    overflow: hidden;
+    width: 50%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
-.contactLeft img {
-    height: 100%;
-    width: auto;
+.leftTextBlock {
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.text h2 {
+    text-transform: uppercase;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.buttons button {
+    width: 80px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    transition: transform 0.3s ease;
+}
+
+.buttons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.leftImgBlock img {
+    width: 80%;
+    height: auto;
+    margin-left: 50px;
 }
 
 .contactRight {
-    overflow: hidden;
+    width: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    margin-bottom: 135px;
 }
 
-.contactRight img {
-    height: 100%;
-    width: auto;
+.links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.links p {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.links a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.profiles {
+    display: flex;
+    gap: 40px;
+}
+
+.andrejProfile {
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(23, 23, 23);
+    width: 300px;
+    height: 120px;
+}
+
+.andrejImgBlock {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: -20px;
+}
+
+.andrejImgBlock img {
+    width: 120px;
+    height: auto;
+}
+
+.andrejImgBlock p {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.andrejContacts {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.andrejContacts a {
+    text-decoration: none;
+    color: white;
+}
+
+.darijaProfile {
+    display: flex;
+    border-radius: 30px;
+    background-color: rgb(23, 23, 23);
+    width: 300px;
+    height: 120px;
+}
+
+.darijaImgBlock {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-left: -20px;
+}
+
+.darijaImgBlock img {
+    width: 120px;
+    height: auto;
+}
+
+.darijaImgBlock p {
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 7px;
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.darijaContacts {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.darijaContacts a {
+    text-decoration: none;
+    color: white;
+}
+
+.profileIcons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileIcons svg { 
+    margin: 5px 5px; 
+    width: 25px;
+    height: auto;
+}
+
+.anotherText {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px auto;
+    color: white;
+    padding: 50px 50px;
+}
+
+.anotherText h3 {
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.anotherText h4 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.contactLogo {
+    display: flex;
+}
+
+.contactLogo img {
+    width: 35%;
+    height: auto;
+    margin: 50px auto 80px;
 }
