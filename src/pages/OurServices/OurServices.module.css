@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 
 * {
     font-family: "Montserrat", sans-serif;
@@ -10,17 +11,220 @@
 .headBlock {
     width: 100%;
     margin-top: 30px;
+    display: flex;
 }
 
 .leftContainer {
     width: 45%;
+    display: flex;
+    flex-direction: column;
 }
 
-.leftContainer img {
-    width: 700px;
+.leftContainerImageBlock {
+    z-index: 1;
+}
+
+.leftContainerImageBlock img {
+    width: 100%;
     height: auto;
+}
+
+.leftContainerTextBlock {
+    color: white;
+    display: flex;
+    width: 100%;
+    z-index: 2;
+    margin-top: -140px;
+}
+
+.leftContBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    padding-left: 30px;
+}
+
+.leftContTextList {
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.leftContText {
+    border-radius: 15px;
+    background-color: white;
+    color: black;
+    padding: 5px;
+}
+
+.textInLeftContBlock {
+    border: 2px dashed black;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.socialMediaText {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 140px;
 }
 
 .rightContainer {
     width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.rightContainerTextInfo {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rightTextBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: justify;
+    padding: 0px 70px 25px;
+}
+
+.rightTextBlock h1 {
+    font-size: 80px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.navButtons {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin: 0px auto;
+    gap: 50px;
+}
+
+.navButtons button {
+    border-radius: 50px;
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.navButtons button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.rightContainerButtons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 70px;
+}
+
+.rightContainerButtons h2 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.buttonsBlock {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+  .buttonsBlock button {
+    margin: 5px;
+    width: 47%;
+    height: 35px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 500;
+    font-size: 17px;
+    background-color: #CBC7B7;
+}
+
+.pricesBlock {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    color: white;
+}
+
+.pricesLeftBlock {
+    width: 50%;
+    display: flex;
+    margin-left: 80px;
+}
+
+.ourPricesVertical {
+    width: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.ourPricesVertical p {
+    transform: rotate(-90deg);
+    font-size: 50px;
+    font-weight: 600;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+
+.ourPricesList {
+    display: flex;
+}
+
+.pricesList {
+    margin-left: -555px;
+}
+
+.ourPricesList img {
+    width: 650px;
+    height: auto;
+}
+
+.pricesRightBlock {
+    width: 50%;
+    margin-left: 50px;
+}
+
+.pricesRightBlock img {
+    width: 640px;
+    height: auto; 
+}
+
+.pricesRightBlock p {
+    font-family: "Gloria Hallelujah", cursive;
+    width: 400px;
+    margin-top: -195px;
+    margin-left: 115px;
+    transform: rotate(5deg);
+    text-align: center;
+}
+
+.productItem {
+    width: 450px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.productItem hr{
+    width: 100%;
+    border: 1px dashed #ccc;
+    margin-bottom: 3px;
+}
+
+.productItem p,
+.productItem span{
+    white-space: nowrap;
+    font-size: 14px;
 }
