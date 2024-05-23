@@ -12,7 +12,12 @@ import weddPackTitle from '../../media/photography/wedding_pack.PNG'
 import weddPackImg from '../../media/photography/wedding_pack_image.jpg'
 import arrowRight from '../../media/photography/right_arrow.PNG'
 
-export default function Photography() {
+export default function Photography({setModalOpen}) {
+
+  const openModal = () => {
+    setModalOpen(true)
+  }
+
   return (
     <div>
       <section className={s.headBlock}>
@@ -84,7 +89,7 @@ export default function Photography() {
             <li>online gallery with your photos</li>
             <h2>250€</h2>
           </div>
-          <button>BOOK</button>
+          <button onClick={openModal}>BOOK</button>
         </div>
 
         <div className={s.packTwo}>
@@ -101,7 +106,7 @@ export default function Photography() {
             <li>online gallery with your photos</li>
             <h2>350€</h2>
           </div>
-          <button>BOOK</button>
+          <button onClick={openModal}>BOOK</button>
         </div>
 
         <div className={s.packThree}>
@@ -120,7 +125,7 @@ export default function Photography() {
             <li>online gallery with your photos</li>
             <h2>550€</h2>
           </div>
-          <button>BOOK</button>
+          <button onClick={openModal}>BOOK</button>
         </div>
 
       </section>
@@ -155,7 +160,7 @@ export default function Photography() {
                 <li>online gallery with your photos</li>
                 <h2>Prices and services on request</h2>
               </div>
-              <button>CONTACT</button>
+              <button onClick={openModal}>CONTACT</button>
             </div>
 
           </div>

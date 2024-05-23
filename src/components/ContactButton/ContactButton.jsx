@@ -1,10 +1,13 @@
 import React from 'react'
 import s from './ContactButton.module.css'
 
-export default function ContactButton() {
+export default function ContactButton({setModalOpen}) {
+  
+  const openModal = () => {
+    setModalOpen(true)
+  }
+
   return (
-    // <div className={s.buttonContainer}>
-        <a href="/" className={s.contactBtn}>CONTACT US</a>
-    // </div>
+        <button className={s.contactBtn} onClick={openModal}>CONTACT US</button>
   )
 }

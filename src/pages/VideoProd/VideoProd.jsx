@@ -5,6 +5,7 @@ import doubleArrow from '../../media/videoProd/doubleArrowDownIcon.png'
 import profilePicture from '../../media/videoProd/profilePicture.JPG'
 import multipleArrow from '../../media/videoProd/multipleArrow.png'
 import ReactPlayer from 'react-player';
+import { Link } from 'react-router-dom';
 import video1 from '../../media/videoProd/video1.mp4'
 import video2 from '../../media/videoProd/video2.mp4'
 import video3 from '../../media/videoProd/video3.mp4'
@@ -17,7 +18,11 @@ import packTwoImg from '../../media/videoProd/packageTwoImg.png'
 import packThreeImg from '../../media/videoProd/packageThreeImg.png'
 import arrowRight from '../../media/photography/right_arrow.PNG'
 
-export default function VideoProd() {
+export default function VideoProd( { setModalOpen} ) {
+
+  const openModal = () => {
+    setModalOpen(true)
+  }
 
   const [video1Playing, setVideo1Playing] = useState(false);
   const [video2Playing, setVideo2Playing] = useState(false);
@@ -60,7 +65,9 @@ export default function VideoProd() {
           <div className={s.informBlock_left}>
               <h1>VIDEO<br />PRODUCTION</h1>
               <hr />
-              <h6>OUR SERVICES AND PRICES</h6>
+              <Link to="/ourservices">
+                <h6>OUR SERVICES AND PRICES</h6>
+              </Link>
           </div>
           <div className={s.informBlock_right}>
             <h6>VARIETIES OF VIDEOGRAPHY SESSIONS WE OFFER:</h6>
@@ -93,8 +100,7 @@ export default function VideoProd() {
               <p><strong>Wedding Film:</strong> Videographic memories of your special day, captured with love and attention to detail to preserve your memories for a lifetime.</p>
             </div>
             <div className={s.checkList}>
-              <img src={checkboxIcon} alt="checkboxIcon" />
-              <p>Additionally, we also offer video editing services and professional videography to ensure your project looks its best and is executed with meticulous care.</p>
+              <p className={s.additionalText}>Additionally, we also offer video editing services and professional videography to ensure your project looks its best and is executed with meticulous care.</p>
             </div>
           </div>
         </div>
@@ -188,52 +194,44 @@ export default function VideoProd() {
           <img src={packOneTitle} alt="" />
           <div className={s.packOneInfo}>
             <img src={packOneImg} alt="FirstPackageImage" />
-            <h1>EXPRESS</h1>
-            <li>pre-session consultation (online)</li>
-            <li>up to 60 min photo session</li>
-            <li>studio rent included</li>
-            <li>100 colored photos in 2 days after photo session</li>
-            <li>all the best shots from the photo session</li>
-            <li>retouch of 15 photos of your choice in 2 weeks</li>
-            <li>online gallery with your photos</li>
-            <h2>250€</h2>
+            <h1>VIP Wedding Experience</h1>
+            <li>Full Wedding Day Filming</li>
+            <li>Highlight clip</li>
+            <li>Wedding film</li>
+            <li>Wedding Teaser 30 sec</li>
+            <li>Vertical Reel - 'Portrait of Bride</li>
+            <li>Photoshoot / editing and retouching of photos.</li>
+            <h2>1100€</h2>
           </div>
-          <button>BOOK</button>
+          <button onClick={openModal}>BOOK</button>
         </div>
 
         <div className={s.packTwo}>
           <img src={packTwoTitle} alt="" />
           <div className={s.packTwoInfo}>
             <img src={packTwoImg} alt="SecondPackageImage" />
-            <h1>STANDARD</h1>
-            <li>pre-session consultation (online)</li>
-            <li>1,5-2 hours photo session</li>
-            <li>studio rent included</li>
-            <li>150 colored photos in 2 days after photo session</li>
-            <li>all the best shots from the photo session</li>
-            <li>retouch of 25 photos of your choice in 2 weeks</li>
-            <li>online gallery with your photos</li>
-            <h2>350€</h2>
+            <h1>Cinematic Portrait</h1>
+            <li>Free pre-shoot consultation.</li>
+            <li>Up to 4 hours of filming.</li>
+            <li>Dynamic video, YouTube, Instagram Reels, and TikTok.</li>
+            <li>Professional video editing tailored to your preferences.</li>
+            <li>Immersive sound design for maximum impact.</li>
+            <h2>250€</h2>
           </div>
-          <button>BOOK</button>
+          <button onClick={openModal}>BOOK</button>
         </div>
         <div className={s.packThree}>
           <img src={packThreeTitle} alt="" />
           <div className={s.packThreeInfo}>
             <img src={packThreeImg} alt="ThirdPackageImage" />
-            <h1>ALL INCLUDED</h1>
-            <li>pre-session consultation (online)</li>
-            <li>2 hours photo session</li>
-            <li>makeup and hair artist on set</li>
-            <li>studio rent included</li>
-            <li>150 colored photos in 2 days after photo session</li>
-            <li>all the best shots from the photo session</li>
-            <li>retouch of 30 photos of your choice in 2-3 weeks</li>
-            <li>2 short videos</li>
-            <li>online gallery with your photos</li>
-            <h2>550€</h2>
+            <h1>Events / Parties / Family</h1>
+            <li>Free pre-shoot consultation to discuss the details of your event and your preferences.</li>
+            <li>Minimum shooting time - 3 hours.</li>
+            <li>Use of drone for capturing breathtaking aerial shots.</li>
+            <li>Professional video editing included in the price.</li>
+            <h2>From 100€ per hour</h2>
           </div>
-          <button>BOOK</button>
+          <button onClick={openModal}>BOOK</button>
         </div>
 
       </section>

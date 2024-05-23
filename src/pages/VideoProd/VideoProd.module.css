@@ -72,6 +72,11 @@
     border-radius: 40px;
     display: flex;
     justify-content: center;
+    cursor: pointer;
+}
+
+.informBlock_left a{
+    text-decoration: none;
 }
 
 .informBlock_right {
@@ -106,6 +111,10 @@
 
 .checkList img{
     width: 25px;
+}
+
+.additionalText{
+    text-align: center;
 }
 
 .aboutBlock {
@@ -266,7 +275,8 @@
 }
 
 .packagesBlock li {
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .packOne,

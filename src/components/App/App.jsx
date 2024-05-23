@@ -10,24 +10,29 @@ import OurServices from '../../pages/OurServices/OurServices';
 import VideoProd from '../../pages/VideoProd/VideoProd';
 import s from './App.module.css'
 
+import ModalWindow from '../ModalWindow/ModalWindow.jsx';
+import { useState } from 'react';
 
 
 function App() {
+
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <div className={s.wrapper}>
       <Header/>
       <Routes>
-        <Route path='/' element={<MainPage />}/>
-        <Route path='/photography' element={<Photography />}/>
-        <Route path='/videoproduction' element={<VideoProd />}/>
-        <Route path='/portfolio' element={<Portfolio />}/>
-        <Route path='/ourservices' element={<OurServices />}/>
-        <Route path='/contact' element={<Contact />}/>
+        <Route path='/' element={<MainPage/>}/>
+        <Route path='/photography' element={<Photography modalOpen={modalOpen} setModalOpen={setModalOpen}/>}/>
+        <Route path='/videoproduction' element={<VideoProd modalOpen={modalOpen} setModalOpen={setModalOpen}/>}/>
+        <Route path='/portfolio' element={<Portfolio/>}/>
+        <Route path='/ourservices' element={<OurServices/>}/>
+        <Route path='/contact' element={<Contact/>}/>
       </Routes>
       {/* <MainPage /> */}
-      <ContactButton />
-      <Footer/>
+      <ModalWindow modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+      <ContactButton modalOpen={modalOpen} setModalOpen={setModalOpen}/>
+      <Footer modalOpen={modalOpen} setModalOpen={setModalOpen}/>
     </div>
   );
 }
