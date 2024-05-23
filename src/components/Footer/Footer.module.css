@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.footer{
+/* .footer{
     padding-top: 50px;
     padding-bottom: 20px;
     display: flex;
@@ -12,7 +12,6 @@
 
 .contactBlock {
     display: flex;
-    /* flex-direction: row; */
     justify-content: center;
 }
 
@@ -21,4 +20,100 @@
     color: white;
     align-self: center;
     font-weight: 300;
+} */
+
+.contactBlock {
+    display: flex;
+    justify-content: center;
+}
+
+.footer hr {
+    margin: 20px auto 30px;
+    width: 90%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    margin: 0px auto 30px;
+}
+
+.text p {
+    margin-right: 5px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;;
+}
+
+.text svg {
+    margin-left: 10px;
+}
+
+.text p,
+.text svg {
+    color: white;
+}
+
+.ourContacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.contactsH3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    gap: 50px;
+}
+
+.socialMediaIcons svg {
+    width: 25px;
+    height: auto;
+    margin-right: 7px;
+}
+
+.instagram {
+    display: flex;
+    align-items: center;
+}
+
+.instagram a {
+    text-decoration: none;
+    color: white;
+}
+
+.mail {
+    display: flex;
+    align-items: center;
+}
+
+.mail a {
+    text-decoration: none;
+    color: white;
+}
+
+.whatsapp {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp p {
+    color: white;
+}
+
+.rights {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.rights p {
+    color: white;
+
 }

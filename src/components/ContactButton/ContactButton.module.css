@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 .contactBtn{ 
     position: fixed;
     bottom: 20px;
@@ -31,4 +30,3 @@
     padding: 6px;
     width: 140px;
 }
-

@@ -54,7 +54,7 @@ export default function Contact() {
 
           <div className={s.links}>
             <p>GET IN TOUCH WITH US</p>
-            <a href="https://www.instagram.com/ceyla_media">@ceyla_media</a>
+            <a href="https://www.instagram.com/ceyla_media" target="_blank" rel="noreferrer">@ceyla_media</a>
             <MailtoLink />
           </div>
 

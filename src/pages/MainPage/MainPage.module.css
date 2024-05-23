@@ -1,5 +1,9 @@
-.main{
-    display: grid;
-    grid-template-rows: 1fr;
+.main {
+
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+
+    /* /* display: grid; */
+    grid-template-rows: 1fr; 
     /* gap: 40px; */
 }

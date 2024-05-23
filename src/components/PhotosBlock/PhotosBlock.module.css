@@ -109,9 +109,11 @@
 }
 
 .container .lazyloadElem:nth-child(n + 7) {
-    overflow: hidden;
+    /* overflow: hidden;
     position: relative;
     display: flex;
     justify-content: center; 
     align-items: center; 
+    object-fit: cover; */
+    align-content: center;
 }

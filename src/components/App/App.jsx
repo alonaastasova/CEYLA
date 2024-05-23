@@ -8,11 +8,14 @@ import Portfolio from '../../pages/Portfolio/Portfolio.jsx';
 import Contact from '../../pages/Contact/Contact';
 import OurServices from '../../pages/OurServices/OurServices';
 import VideoProd from '../../pages/VideoProd/VideoProd';
+import s from './App.module.css'
+
 
 
 function App() {
+
   return (
-    <div>
+    <div className={s.wrapper}>
       <Header/>
       <Routes>
         <Route path='/' element={<MainPage />}/>

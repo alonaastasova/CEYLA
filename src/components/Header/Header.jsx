@@ -23,20 +23,11 @@ export default function Header() {
                     <NavLink to={'/ourservices'}>OUR SERVICES</NavLink>
                     <NavLink to={'/contact'}>CONTACT</NavLink>
                 </div>
-                {/* <ul> */}
-                {/* <li><a href="/">HOME</a></li>
-                        <li><a href="/photography">PHOTOGRAPHY</a></li>
-                        <li><a href="/videoproduction">VIDEO PRODUCTION</a></li>
-                        <li><a href="/portfolio">PORTFOLIO</a></li>
-                        <li><a href="/ourservices">OUR SERVICES</a></li>
-                        <li><a href="/contact">CONTACT</a></li> */}
-                {/* </ul> */}
 
                 <div className={s.header_social}>
                     <NavLink to={'https://www.instagram.com/ceyla_media'} target="_blank" rel="noopener noreferrer" className={s.instIco}><FaInstagram /></NavLink>
                 </div>
 
-                {/* <div className={s.divider}></div> */}
             </nav>
         </header>
     )
