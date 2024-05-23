@@ -26,7 +26,7 @@ nav {
     margin-right: 40px;
 }
 
-.navLinks{
+.navLinks {
     padding: 0;
     margin: 0;
     display: flex;
@@ -36,7 +36,7 @@ nav {
     gap: 50px;
 }
 
-.navLinks a{
+.navLinks a {
     text-decoration: none;
     color: white;
     transition: 0.3s ease;
@@ -54,4 +54,94 @@ nav {
 
 .header_social .instIco {
     color: white;
+}
+
+.hamburgerMenu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-right: 40px;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-y: hidden;
+    transition: height 0.5s ease;
+}
+
+.overlay.open {
+    height: 100%;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #9d9d9d;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transition: 0.3s;
+}
+
+.overlay .overlayContent {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay .overlayContent a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #9d9d9d;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay .overlayContent a:hover,
+.overlay .overlayContent a:focus,
+.overlay .closebtn:hover{
+    color: #f1f1f1;
+}
+
+/* MEDIA */
+
+@media (max-width: 1024px) {
+    .website_logo img{
+        width: 110px;
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .hamburgerMenu {
+        display: block;
+        margin: 50px;
+    }
+
+    .header_social{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .hamburgerMenu {
+        font-size: 35px;
+    }
+
+    .website_logo img{
+        width: 95px;
+    }
 }

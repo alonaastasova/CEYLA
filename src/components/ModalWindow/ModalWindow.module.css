@@ -84,6 +84,10 @@
   gap: 15px;
 }
 
+.contactLink svg{
+  margin: 0;
+}
+
 .contactLink a{
   border: 1px solid  rgb(88, 88, 88);
   border-radius: 10px;
@@ -97,3 +101,19 @@
 .info{
   font-size: 13px;
 }
+
+@media (max-width: 480px) {
+  .modalBody{
+    gap: 10px;
+  }
+  .cardPhoto{
+    width: 100px;
+    height: 100px;
+  }
+  .modalBody p{
+    font-size: 13px;
+  }
+  .contactLink a{
+    padding: 10px;
+  }
+} 

@@ -73,3 +73,35 @@
 .button:hover{
     background-color: white;
 }
+
+/* MEDIA */
+
+@media (max-width: 1024px) {
+    .mainBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .linkBlock{
+        height: 200px;
+        width: 300px;
+    }
+    .linkBlock::before{
+        height: 200px;
+        width: 300px;
+    }
+    .linkBlock:nth-child(1){
+        background-size: 650px auto;
+    }
+    .linkBlock:nth-child(2){
+        background-size: 580px auto;
+        background-position-y: -60px;
+    }
+    .linkBlock:nth-child(3){
+        background-size: 350px auto;
+        background-position-y: -170px;
+    }
+} 

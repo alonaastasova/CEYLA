@@ -20,3 +20,13 @@
     font-weight: 300;
     font-size: 18px;
 }
+
+@media (max-width: 480px) {
+    .text1{
+        font-size: 15px;
+        text-align: center;
+    }
+    .text2{
+        font-size: 13px;
+    }
+} 

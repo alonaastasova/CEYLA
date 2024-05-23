@@ -117,3 +117,24 @@
     object-fit: cover; */
     align-content: center;
 }
+
+@media (max-width: 768px){
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto; 
+    }
+
+    .container .lazyloadElem:nth-child(n + 1) {
+        grid-area: auto;
+    }
+
+    .container .lazyloadElem:nth-child(5) img{
+        object-position: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container{
+        padding: 15px 25px 50px 25px;
+    }
+} 

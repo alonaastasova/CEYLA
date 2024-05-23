@@ -26,11 +26,11 @@ const ModalWindow = ({ modalOpen, setModalOpen }) => {
           <a href="tel:+4917680544292">+4917680544292</a>
           <a href="mailto:ceyla.media@gmail.com">ceyla.media@gmail.com</a>
           <div className={s.contactLink}>
-            <a href="https://www.instagram.com/ceyla_media">
+            <a href="https://www.instagram.com/ceyla_media" target="_blank" rel="noreferrer">
               <FaInstagram />
               Instagram
             </a>
-            <a href="https://wa.me/4917680544292">
+            <a href="https://wa.me/4917680544292" target="_blank" rel="noreferrer">
               <FaWhatsapp />
               WhatsApp
             </a>
