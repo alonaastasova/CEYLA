@@ -139,7 +139,7 @@ export default function OurServices() {
               }
 
               <br />
-              <p>CUSTOM DESIGN OF SOCIAL MEDIA</p>
+              <p className={s.priceListText}>CUSTOM DESIGN OF SOCIAL MEDIA</p>
 
               {
                 custonPrice.map(({ name, price }, index) => (
