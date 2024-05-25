@@ -230,7 +230,7 @@
     background-repeat: no-repeat;
 
     width: 100%;
-    height: 650px;
+    /* height: 650px; */
 }
 
 .weddingContainer {
@@ -309,7 +309,7 @@
 
 .weddingPack .weddingPackInfo li,
 .weddingPack .weddingPackInfo h2 {
-  text-align: center; 
+    text-align: center;
 }
 
 .importantBlock {
@@ -328,17 +328,17 @@
     grid-template-columns: 400px 300px 300px 300px;
     grid-gap: 30px;
     padding: 40px 30px;
-    text-align: justify; 
+    text-align: justify;
     justify-content: center;
 }
-  
+
 
 .impB1 {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-} 
+}
 
 .impB1 img {
     height: 70px;
@@ -348,11 +348,11 @@
 .impB2,
 .impB3,
 .impB4 {
-    display: flex; 
-    flex-direction: column; 
-    align-items: flex-start; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     height: 100%;
-    text-align: justify; 
+    text-align: justify;
 }
 
 .impB2 h6,
@@ -361,4 +361,255 @@
     font-size: 16px;
     margin-bottom: 10px;
     margin-top: 10px;
+}
+
+
+@media (max-width: 1024px) {
+    .informBlock {
+        padding: 20px 0px 0px 20px;
+    }
+
+    .informBlock_left h1 {
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .informBlock_left h6 {
+        font-size: 24px;
+    }
+
+    .informBlock_left_btns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .informBlock_right h6 {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .informBlock_right li {
+        font-size: 12px;
+        line-height: 3px;
+    }
+
+    .aboutBlock {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .aboutInfo {
+        width: 100%;
+    }
+
+    .aboutH5 {
+        margin: 120px -20px 0px 0px
+    }
+
+    .aboutText p {
+        padding: 15px 50px 0px 30px;
+    }
+
+    .aboutBlockMarker {
+        margin-top: 20px;
+    }
+
+    .packagesBlock {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .whatAboutBlock {
+        padding: 20px 90px;
+    }
+
+    .weddingContainer {
+        flex-direction: column;
+        padding: 40px 50px;
+    }
+
+    .weddingContainerInfo {
+        width: 90%;
+    }
+
+    .importantBlock {
+        width: 100%;
+        height: auto;
+    }
+
+    .grig {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .impB1 img {
+        display: none;
+    }
+
+    .impB2,
+    .impB3,
+    .impB4 {
+        align-items: center;
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .informBlock {
+        flex-direction: column;
+        padding: 20px;
+        gap: 0;
+    }
+
+    .informBlock_left {
+        width: 70%;
+        text-align: center;
+    }
+
+    .informBlock_left_btns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .informBlock_right {
+        background-image: none;
+        width: 70%;
+        text-align: center;
+    }
+
+    .informBlock_right h6 {
+        font-size: 16px;
+        background-color: transparent;
+        color: white;
+    }
+
+    .aboutBlock {
+        margin-top: 0;
+    }
+
+    .aboutH5 {
+        display: none;
+    }
+
+    .aboutInfo {
+        padding-left: 30px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .informBlock {
+        padding: 0;
+    }
+
+    .informBlock_left {
+        width: 100%;
+    }
+
+    .informBlock_left_btns {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .informBlock_right {
+        width: 100%;
+    }
+
+    .informBlock_right li {
+        line-height: 15px;
+    }
+
+    .aboutInfo {
+        flex-direction: column;
+        padding: 0;
+        background-image: none;
+    }
+
+    .aboutText {
+        margin-top: 10px;
+        padding: 0px 15px;
+        text-align: justify;
+        align-items: center;
+    }
+    .aboutText p {
+        padding: 10px 20px;
+    }
+
+    .aboutText h6 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .aboutBlockMarker {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .aboutBlockMarker h1 {
+        font-size: 30px;
+    }
+
+    .packagesBlock {
+        width: 100%;
+        padding: 20px 20px;
+        margin-bottom: 30px;
+    }
+
+    .packOne img,
+    .packTwo img,
+    .packThree img {
+        width: 80%;
+    }
+    .packOneInfo,
+    .packTwoInfo,
+    .packThreeInfo {
+        text-align: center;
+    }
+    
+    .whatAboutBlock {
+        margin: 0;
+        padding: 40px;
+    }
+
+    .whatAboutBlock p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    .weddingContainer {
+        padding: 20px 20px;
+        gap: 10px;
+    }
+
+    .weddingContainerInfo h1 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .weddingContainerInfo h2 {
+        margin-top: 20px;
+        font-size: 21px;
+    }
+
+    .weddingContainerPackage {
+        width: 100%;
+    }
+    .weddingPackInfo {
+        text-align: justify;
+    }
+    .weddingPack img {
+        width: 80%;
+    }
+    .weddingPackInfo h2 {
+        font-size: 18px;
+    }
+
+    .grig {
+        width: 100%;
+    }
+
+    .impB2,
+    .impB3,
+    .impB4 {
+        width: 80%;
+    }
 }
