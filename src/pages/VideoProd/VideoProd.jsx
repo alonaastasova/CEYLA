@@ -193,7 +193,10 @@ export default function VideoProd( { setModalOpen} ) {
         <div className={s.packOne}>
           <img src={packOneTitle} alt="" />
           <div className={s.packOneInfo}>
-            <img src={packOneImg} alt="FirstPackageImage" />
+            <div className={s.packPhoto}>
+              <img src={packOneImg} alt="FirstPackageImage" />
+            </div>
+            {/* <img src={packOneImg} alt="FirstPackageImage" /> */}
             <h1>VIP Wedding Experience</h1>
             <li>Full Wedding Day Filming</li>
             <li>Highlight clip</li>
@@ -209,7 +212,10 @@ export default function VideoProd( { setModalOpen} ) {
         <div className={s.packTwo}>
           <img src={packTwoTitle} alt="" />
           <div className={s.packTwoInfo}>
-            <img src={packTwoImg} alt="SecondPackageImage" />
+            <div className={s.packPhoto}>
+              <img src={packTwoImg} alt="SecondPackageImage" />
+            </div>
+            {/* <img src={packTwoImg} alt="SecondPackageImage" /> */}
             <h1>Cinematic Portrait</h1>
             <li>Free pre-shoot consultation.</li>
             <li>Up to 4 hours of filming.</li>
@@ -223,7 +229,10 @@ export default function VideoProd( { setModalOpen} ) {
         <div className={s.packThree}>
           <img src={packThreeTitle} alt="" />
           <div className={s.packThreeInfo}>
-            <img src={packThreeImg} alt="ThirdPackageImage" />
+            <div className={s.packPhoto}>
+              <img src={packThreeImg} alt="ThirdPackageImage" />
+            </div>
+            {/* <img src={packThreeImg} alt="ThirdPackageImage" /> */}
             <h1>Events / Parties / Family</h1>
             <li>Free pre-shoot consultation to discuss the details of your event and your preferences.</li>
             <li>Minimum shooting time - 3 hours.</li>

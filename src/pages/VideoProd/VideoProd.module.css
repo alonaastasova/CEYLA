@@ -318,6 +318,7 @@
 .packThreeInfo {
     border: 1px solid white;
     height: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,15 +339,18 @@
     margin-top: 20px;
 }
 
-.packOneInfo img,
-.packTwoInfo img,
-.packThreeInfo img {
-    height: 200px;
-    width: 370px;
+.packPhoto img {
+    height: 100%;
+    width: 100%;
     object-fit: cover;
-    padding-bottom: 20px;
+    /* padding-bottom: 10px; */
 }
-
+.packPhoto{
+    width: 90%;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
 .importantBlock {
     width: 100%;
     height: auto;
@@ -371,3 +375,184 @@
 .impBList{
     line-height: 30px;
 }
+
+@media (max-width: 1024px) {
+    .headBlock{
+        height: auto;
+    }
+    .informBlock_left::after{
+        display: none;
+    }
+    .informBlock{
+        flex-direction: column;
+        padding: 50px 0 0 0;
+    }
+    .informBlock_left{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .informBlock_right{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .informBlock_right h6{
+        width: 100%;
+        text-align: center;
+    }
+    .checkList{
+        width: 75%;
+    }
+    .checkList p{
+        margin: 0;
+        padding: 20px 30px 0px 10px;
+        height: 58px;
+    }
+    .checkList img{
+        margin: 0;
+    }
+    .aboutBlock{
+        flex-direction: column;
+    }
+    .aboutInfo{
+        width: 100%;
+        margin: 0;
+    }
+    .aboutSecondBlock{
+        padding: 25px;
+    }
+    .videoDiv{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+    .packagesBlock{
+        display: flex;
+        flex-direction: column;
+        /* width: 600px; */
+    }
+    .packOneInfo,
+    .packTwoInfo,
+    .packThreeInfo{
+        width: 500px;
+    }
+    .importantBlock{
+        padding: 40px 60px 40px 3%;
+        gap: 10px;
+    }
+    .impBTitle{
+        font-size: 30px;
+    }
+ } 
+ 
+ @media (max-width: 768px) {
+    .importantBlock{
+        flex-direction: column;
+        padding: 30px;
+        gap: 0;
+    }
+    .impBTitle{
+        flex-direction: column;
+        text-align: center;
+        font-size: 20px;
+    }
+    .impBTitle img{
+        rotate: 90deg;
+        height: 80px;
+    }
+    .impBList{
+        width: 90%;
+    }
+ } 
+ 
+ @media (max-width: 480px) {
+    .informBlock_left h1{
+        font-size: 40px;
+        line-height: normal;
+    }
+    .informBlock_left hr{
+        width: 90%;
+    }
+    .informBlock_left h6{
+        width: 90%;
+        padding: 10px;
+        font-size: 20px;
+        height: auto;
+        border-radius: 50px;
+        margin: 0 auto;
+    }
+    .informBlock_left a{
+        width: 80%;
+    }
+    .informBlock_right{
+        height: auto;
+    }
+    .checkList{
+        width: 90%;
+    }
+    .checkList p{
+        height: auto;
+        padding: 20px 0px 0px 10px;
+    }
+    .aboutBlock{
+        justify-content: center;
+    }
+    .aboutInfo{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-image: none;
+    }
+    .aboutInfo .aboutH5{
+        transform: none;
+        width: 100%;
+        text-align: center;
+    }
+    .aboutProfPic{
+        margin: 10px auto;
+    }
+    .aboutSecondBlock{
+        text-align: center;
+    }
+    .portfolioBlock img{
+        display: none;
+        justify-content: center;
+    }
+    .videoDiv{
+        grid-template-columns: 1fr;
+    }
+    .packagesBlock{
+        gap: 25px;
+        padding: 20px 20px 50px 20px;
+    }
+    .packagesBlock img{
+        margin: 0;
+    }
+    .packOne,
+    .packTwo,
+    .packThree{
+        width: 100%;
+    }
+    .packOne button,
+    .packTwo button,
+    .packThree button{
+        color: black;
+    }
+    .packOneInfo,
+    .packTwoInfo,
+    .packThreeInfo{
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+    .packOneInfo h1,
+    .packTwoInfo h1,
+    .packThreeInfo h1{
+        width: 90%;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+ } 
