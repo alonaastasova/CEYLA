@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 .portfolioMainBlock{
@@ -85,4 +85,82 @@
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
+} */
+
+
+/* body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #282c34;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+} */
+
+.textBlock {
+    width: 65%;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.textBlock h1 {
+    padding-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.textBlock h3 {
+    padding-bottom: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: 21px;
+}
+
+.textBlock p {
+    padding-bottom: 50px;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
+}
+
+.container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vw;
+}
+
+.comingSoon {
+    font-size: 3rem;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .comingSoon {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .comingSoon {
+        font-size: 1.5rem;
+    }
+
+    .textBlock h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .textBlock h3 {
+        font-size: 13px;
+
+    }
 }
