@@ -39,7 +39,8 @@
 }
 
 .informBlock_left_btns {
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin: 40px 0 0 0;
     width: 90%;
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 1fr));
@@ -51,6 +52,7 @@
     height: 35px;
     width: 150px;
     transition: transform 0.3s ease;
+    color: black;
 }
 
 .informBlock_left_btns button:hover {
@@ -171,6 +173,7 @@
     margin-top: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color: black;
 }
 
 .packOne button:hover,
@@ -301,6 +304,7 @@
     margin-top: 30px;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color: black;
 }
 
 .weddingPack button:hover {
@@ -470,6 +474,7 @@
 
     .informBlock_left_btns {
         grid-template-columns: repeat(3, 1fr);
+        margin: 40px auto 0;
     }
 
     .informBlock_right {
@@ -584,6 +589,7 @@
     .weddingContainerInfo h1 {
         text-align: center;
         margin-bottom: 15px;
+        font-size: 35px;
     }
 
     .weddingContainerInfo h2 {

@@ -63,6 +63,7 @@
     border: none;
     font-weight: 600;
     transition: transform 0.3s ease;
+    color: black;
 }
 
 .buttons button:hover {
@@ -303,5 +304,9 @@
     }
     .contactLogo img {
         margin: 50px auto;
+    }
+    .darijaContacts p,
+    .andrejContacts p{
+        font-size: 18px;
     }
 } 

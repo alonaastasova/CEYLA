@@ -116,6 +116,7 @@
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s ease;
+    color: black;
 }
 
 .navButtons button:hover {
@@ -151,6 +152,7 @@
     font-weight: 500;
     font-size: 17px;
     background-color: #CBC7B7;
+    color: black;
 }
 
 .pricesBlock {
