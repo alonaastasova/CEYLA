@@ -36,7 +36,7 @@ export default function Footer() {
           </div>
           <div className={s.whatsapp}>
             <IoLogoWhatsapp />
-            <p>+371 23-23-23-23</p>
+            <p>+49-176-80544292</p>
           </div>
         </div>
       </div>
