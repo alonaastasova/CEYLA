@@ -149,6 +149,10 @@
     line-height: 30px;
 }
 
+.andrejContacts p {
+    font-size: 17px;
+}
+
 .andrejContacts a {
     text-decoration: none;
     color: white;
@@ -190,6 +194,10 @@
     color: white;
     font-size: 20px;
     line-height: 30px;
+}
+
+.darijaContacts p {
+    font-size: 17px;
 }
 
 .darijaContacts a {
