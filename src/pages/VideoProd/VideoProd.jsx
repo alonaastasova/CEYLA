@@ -173,7 +173,6 @@ export default function VideoProd( { setModalOpen} ) {
           />
           <ReactPlayer 
             url={video4}
-            src={video4}
             playing={video4Playing}
             muted
             loop
