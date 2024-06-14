@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 import video1 from '../../media/videoProd/video1.mp4'
 import video2 from '../../media/videoProd/video2.mp4'
 import video3 from '../../media/videoProd/video3.mp4'
-import video4 from '../../media/videoProd/video4.mp4'
+import video4 from '../../media/video4.mp4'
 import packOneTitle from '../../media/videoProd/weddingPackage.png'
 import packTwoTitle from '../../media/videoProd/cinematicPackage.png'
 import packThreeTitle from '../../media/videoProd/eventPackage.png'
