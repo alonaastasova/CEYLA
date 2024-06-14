@@ -7,7 +7,7 @@ import multipleArrow from '../../media/videoProd/multipleArrow.png'
 import ReactPlayer from 'react-player';
 import { Link } from 'react-router-dom';
 import video1 from '../../media/videoProd/video1.mp4'
-import video2 from '../../media/videoProd/video2.mp4'
+import video2 from '../../media/videoProd/video2.MP4'
 import video3 from '../../media/videoProd/video3.mp4'
 import video4 from '../../media/videoProd/video4.mp4'
 import packOneTitle from '../../media/videoProd/weddingPackage.png'
