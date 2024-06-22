@@ -12,7 +12,7 @@ import { FaYoutube } from "react-icons/fa";
 export default function Contact() {
 
   const MailtoLink = () => {
-    const emailAddress = 'ceyla.media@gmail.com';
+    const emailAddress = 'contact@ceylamedia.com';
     const subject = 'Subject of the email';
 
     const mailtoLink = `mailto:${emailAddress}?subject=${subject}`;
