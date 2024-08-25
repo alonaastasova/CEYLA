@@ -22,7 +22,7 @@ export default function BusinessCard() {
             </div>
             <div className={s.contactInfo}>
                 <img src={whatsappIcon} alt="whatsappIcon" />
-                <p>+37120000000</p>
+                <p>+371 29505765</p>
             </div>
         </div>
     </div>

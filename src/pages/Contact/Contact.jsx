@@ -65,7 +65,7 @@ export default function Contact() {
                 <p>Andrejs</p>
               </div>
               <div className={s.andrejContacts}>
-                <p>+49-159-01040954</p>
+                <p>+371 22303527</p>
                 <a href="https://www.instagram.com/androshkatv/" target="_blank" rel="noreferrer">@androshkatv</a>
                 <div className={s.profileIcons}>
                   <FaTiktok />
@@ -80,7 +80,7 @@ export default function Contact() {
                 <p>Darija</p>
               </div>
               <div className={s.darijaContacts}>
-                <p>+49-176-80544292</p>
+                <p>+371 29505765</p>
                 <a href="https://www.instagram.com/miss.darija/" target="_blank" rel="noreferrer">@miss.darija</a>
                 <div className={s.profileIcons}>
                   <FaTiktok />

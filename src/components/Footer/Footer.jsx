@@ -35,8 +35,10 @@ export default function Footer() {
             <a href="mailto:contact@ceylamedia.com">contact@ceylamedia.com</a>
           </div>
           <div className={s.whatsapp}>
+          <a href="https://wa.me/37129505765" target="_blank" rel="noreferrer">
             <IoLogoWhatsapp />
-            <p>+49-176-80544292</p>
+            <p>+371 29505765</p>
+            </a>
           </div>
         </div>
       </div>

@@ -98,6 +98,13 @@
     color: white;
 }
 
+.whatsapp a{
+    text-decoration: none;
+    color: white;    
+    display: flex;
+    align-items: center;
+  }
+
 .whatsapp {
     display: flex;
     align-items: center;
